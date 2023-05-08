@@ -1,4 +1,6 @@
-.row div{
+.content{
     min-height: 300px;
     margin-top: 5px;
+    margin-left: 12px;
+    margin-right: 12px;
 }

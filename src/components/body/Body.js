@@ -5,7 +5,7 @@ export default function Body() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col text-justify border rounded" style={{ padding: "5px" }}>
+        <div className="col text-justify border rounded content" style={{ padding: "5px" }}>
         DIGITAL IPSUM The decade that brought us Star Trek and Doctor Who also
           resurrected Cicero—or at least what used to be Cicero—in an attempt to
           make the days before computerized design a little less painstaking.
