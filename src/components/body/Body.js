@@ -3,7 +3,7 @@ import "./Body.css";
 
 export default function Body() {
   return (
-    <div className="container">
+    <div className="container-fluid" style={{marginTop: "2px"}}>
       <div className="row">
         <div className="col text-justify border rounded content" style={{ padding: "5px" }}>
         DIGITAL IPSUM The decade that brought us Star Trek and Doctor Who also

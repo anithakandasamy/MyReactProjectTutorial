@@ -3,7 +3,7 @@ import "./Carousel.css";
 
 export default function Carousel() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="cold-md-4">
         <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-bs-interval="true"  data-bs-ride="carousel">
           <div className="carousel-indicators">
