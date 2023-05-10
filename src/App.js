@@ -5,6 +5,7 @@ import Card1 from "./components/card1/Card1";
 import Body from "./components/body/Body";
 import PropsCardParent from "./components/propsCardParent/PropsCardParent";
 import Categories from "./components/categories/Categories";
+import StateCard from "./components/stateCard/StateCard";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Carousel></Carousel>
       <Card1></Card1>
       <PropsCardParent></PropsCardParent>
+      <StateCard></StateCard>
       <Body></Body>
       <Footer></Footer>
     </div>

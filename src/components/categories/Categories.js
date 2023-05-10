@@ -8,11 +8,13 @@ export default class Categories extends Component {
         <div className="row">
           {categories.map((category) => (
             <Category
+              key={"ctg" + category.id}
               imgSrc={category.imgSrc}
               title={category.title}
+              id={category.id}
             ></Category>
           ))}
-           <Category></Category>
+          <Category></Category>
         </div>
       </div>
     );
