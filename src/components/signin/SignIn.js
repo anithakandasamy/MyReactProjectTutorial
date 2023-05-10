@@ -10,7 +10,6 @@ export default class SignIn extends Component {
   }
 
   TogglePassword = (e) => {
-    console.log(e.target.checked)
     this.setState({ flag: e.target.checked });
   };
 
@@ -29,12 +28,12 @@ export default class SignIn extends Component {
       >
         <div className="row">
           <div className="col-md-6">
-            <label for="inputEmail" class="form-label">
+            <label for="inputEmail" className="form-label">
               Email address
             </label>
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="inputEmail"
               placeholder="name@example.com"
             ></input>
@@ -42,12 +41,12 @@ export default class SignIn extends Component {
         </div>
         <div className="row">
           <div className="col-md-6">
-            <label for="inputPassword" class="form-label">
+            <label for="inputPassword" className="form-label">
               Password
             </label>
             <input
               type={this.state.flag ? "text" : "password"}
-              class="form-control"
+              className="form-control"
               id="inputPassword"
             ></input>
           </div>

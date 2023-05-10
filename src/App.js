@@ -6,7 +6,8 @@ import Body from "./components/body/Body";
 import PropsCardParent from "./components/propsCardParent/PropsCardParent";
 import Categories from "./components/categories/Categories";
 import StateCard from "./components/stateCard/StateCard";
-import SignIn from "./components/signin/SignIn";
+import SignIn from "./components/signIn/SignIn";
+import Comments from "./components/comments/Comments";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <PropsCardParent></PropsCardParent>
       <StateCard></StateCard>
       <SignIn></SignIn>
+      <Comments></Comments>
       <Body></Body>
       <Footer></Footer>
     </div>
