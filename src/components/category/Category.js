@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
 import "./Category.css";
 export default class Category extends Component {
   render() {

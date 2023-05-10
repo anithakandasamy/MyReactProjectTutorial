@@ -6,6 +6,7 @@ import Body from "./components/body/Body";
 import PropsCardParent from "./components/propsCardParent/PropsCardParent";
 import Categories from "./components/categories/Categories";
 import StateCard from "./components/stateCard/StateCard";
+import SignIn from "./components/signin/SignIn";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Card1></Card1>
       <PropsCardParent></PropsCardParent>
       <StateCard></StateCard>
+      <SignIn></SignIn>
       <Body></Body>
       <Footer></Footer>
     </div>

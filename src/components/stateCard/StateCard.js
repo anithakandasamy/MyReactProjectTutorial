@@ -7,18 +7,17 @@ export default class StateCard extends Component {
   };
 
   increment = (elementId) => {
-    var eleIndex = this.state.productsCount.findIndex((ele) => ele.id === elementId);
-    var product = this.state.productsCount[eleIndex];
-    if (product.count < 10) {
+    var product = this.state.productsCount.find((ele) => ele.id === elementId);
+    if (product !== undefined && product.count < 10) {
       product.count++;        
     }
     this.setState([Object.assign({},this.state.productsCount),product]);
+    console.table(this.state);
   };
 
   decrement = (elementId) => {
-    var eleIndex = this.state.productsCount.findIndex((ele) => ele.id === elementId);
-    var product = this.state.productsCount[eleIndex];
-    if (product.count > 0) {
+    var product = this.state.productsCount.find((ele) => ele.id === elementId);
+    if (product !== undefined && product.count > 0) {
       product.count--;        
     }
     this.setState([Object.assign({},this.state.productsCount),product]);
