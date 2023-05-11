@@ -1,9 +1,21 @@
 import React, { Component } from "react";
 import "./Card1.css";
 import products from "./productsInfo.json";
+import Swal from "sweetalert2";
 
 export default class Card1 extends Component {
   productsCounter = products.map((ele) => ({ id: ele.id, counter: 0 }));
+
+  showAlert = (imgSrc) => {
+    Swal.fire({
+      title: "Using SweetAlert",
+      text: "Product added to cart successfully",
+      icon: "success",
+      imageUrl: imgSrc,
+      imageHeight: 100,
+      imageAlt: "A tall image",
+    });
+  };
 
   increment = (elementId) => {
     var prd = this.productsCounter.find((ele) => ele.id === elementId);
@@ -27,10 +39,14 @@ export default class Card1 extends Component {
                 key={"img" + element.id}
                 src={element.imgSrc}
                 className="card-img-top"
-                alt="..." />
+                alt="..."
+              />
               <div key={"crd" + element.id} className="card-body">
-                <h5 key={"tit" + element.id} className="card-title text-primary">
-                  Using ForceUpdate - {element.title}
+                <h5
+                  key={"tit" + element.id}
+                  className="card-title text-primary"
+                >
+                  Using ForceUpdate SweetAlert - {element.title}
                 </h5>
                 <p key={"desc" + element.id} className="card-text">
                   {element.description}
@@ -47,8 +63,10 @@ export default class Card1 extends Component {
                   className="badge bg-success counter"
                   style={{ padding: "12px" }}
                 >
-                  {this.productsCounter.find((ele) => ele.id === element.id)
-                    .counter}
+                  {
+                    this.productsCounter.find((ele) => ele.id === element.id)
+                      .counter
+                  }
                 </span>
                 <button
                   key={"inc" + element.id}
@@ -62,7 +80,9 @@ export default class Card1 extends Component {
                   key={"btnAdd" + element.id}
                   className="btn btn-success bi bi-bag-heart"
                   style={{ marginLeft: "20px" }}
-                  onClick={() => alert("Added to cart")}
+                  onClick={() => {
+                    this.showAlert(element.imgSrc);
+                  }}
                 >
                   {" "}
                   Add to Cart

@@ -19,11 +19,9 @@ export default class SignIn extends Component {
         className="container border rounded"
         style={{
           margin: "5px",
-          marginLeft: "12px",
-          marginRight: "12px",
-          width: "50%",
           minHeight: "250px",
-          padding: "30px",
+          marginRight:"0px",
+          marginLeft:"12px",
         }}
       >
         <div className="row">

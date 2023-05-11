@@ -6,8 +6,9 @@ import Body from "./components/body/Body";
 import PropsCardParent from "./components/propsCardParent/PropsCardParent";
 import Categories from "./components/categories/Categories";
 import StateCard from "./components/stateCard/StateCard";
-import SignIn from "./components/signIn/SignIn";
-import Comments from "./components/comments/Comments";
+import CardModalFunction from "./components/cardModalFunction/CardModalFunction"
+import StateDemo from "./components/stateDemo/StateDemo";
+import CardBootstrapModal from "./components/cardBootstrapModal/CardBootstrapModal";
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
       <Card1></Card1>
       <PropsCardParent></PropsCardParent>
       <StateCard></StateCard>
-      <SignIn></SignIn>
-      <Comments></Comments>
+      <CardModalFunction></CardModalFunction>
+      <CardBootstrapModal></CardBootstrapModal>
+      <StateDemo></StateDemo>
       <Body></Body>
       <Footer></Footer>
     </div>

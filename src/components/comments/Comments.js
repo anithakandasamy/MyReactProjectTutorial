@@ -11,7 +11,7 @@ export default class Comments extends Component {
   maxLimit = 200;
 
   CalculateRemainingLength = (e) => {
-    var comments = document.getElementById("inputComments").value;
+    var comments = e.target.value;
     if(e.keyCode !== 8 && e.keyCode !== 17 && e.keyCode !== 46 && comments.length>200){
       e.preventDefault();
       return;
@@ -24,16 +24,14 @@ export default class Comments extends Component {
       <div
         className="container border rounded"
         style={{
-          margin: "5px",
-          marginLeft: "12px",
-          marginRight: "12px",
-          width: "50%",
+          margin:"5px",
           minHeight: "250px",
-          padding: "30px",
+          marginLeft:"0px",
+          marginRight:"2px"
         }}
       >
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-12">
             <label for="inputComments" className="form-label">
               Comments
             </label>
@@ -49,7 +47,7 @@ export default class Comments extends Component {
           </div>
         </div>
         <div className="row" style={{ marginTop: "10px" }}>
-          <div className="col-md-6">
+          <div className="col-md-12">
             {this.state.maxCharacters} characters remaining
           </div>
         </div>
