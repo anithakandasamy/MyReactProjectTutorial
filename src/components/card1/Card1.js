@@ -13,7 +13,7 @@ export default class Card1 extends Component {
       icon: "success",
       imageUrl: imgSrc,
       imageHeight: 100,
-      imageAlt: "A tall image",
+      imageAlt: "Product",
     });
   };
 
