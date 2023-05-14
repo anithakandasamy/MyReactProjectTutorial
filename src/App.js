@@ -9,20 +9,22 @@ import StateCard from "./components/stateCard/StateCard";
 import CardModalFunction from "./components/cardModalFunction/CardModalFunction"
 import StateDemo from "./components/stateDemo/StateDemo";
 import CardBootstrapModal from "./components/cardBootstrapModal/CardBootstrapModal";
+import Employee from "./components/employee/Employee";
 
 function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Categories></Categories>
-      <Carousel></Carousel>
-      <Card1></Card1>
+      {/* <Categories></Categories>
+      <Carousel></Carousel> */}
+      <Employee></Employee>
+      {/* <Card1></Card1>
       <PropsCardParent></PropsCardParent>
       <StateCard></StateCard>
       <CardModalFunction></CardModalFunction>
       <CardBootstrapModal></CardBootstrapModal>
       <StateDemo></StateDemo>
-      <Body></Body>
+      <Body></Body> */}
       <Footer></Footer>
     </div>
   );
