@@ -31,7 +31,7 @@ export default class Card1 extends Component {
 
   render() {
     return (
-      <div className="container-fluid" style={{ paddingTop: "3px" }}>
+      <div className="container-fluid" style={{ paddingTop: "3px" }}> 
         <div className="card-group">
           {products.map((element) => (
             <div className="card" key={"cnt" + element.id}>

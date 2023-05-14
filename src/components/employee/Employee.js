@@ -163,7 +163,7 @@ export default function Employee() {
   };
 
   return (
-    <div style={{ minHeight: "634px" }}>
+    <div style={{ minHeight: "200px" }}>
       <div className="container">
         <div className="row">
           <div className="col" style={{ marginTop: "10px" }}>
