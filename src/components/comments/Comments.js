@@ -32,7 +32,7 @@ export default class Comments extends Component {
       >
         <div className="row">
           <div className="col-md-12">
-            <label for="inputComments" className="form-label">
+            <label htmlFor="inputComments" className="form-label">
               Comments
             </label>
             <textarea

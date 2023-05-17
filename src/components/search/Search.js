@@ -41,6 +41,7 @@ export default function Search() {
           </div>
           <div className="col-md-4">
             <button
+              key="btnSortAsc"
               className="btn btn-primary bi bi-sort-up"
               style={{ backgroundColor: "#5EB5D4" }}
               onClick={() => {
@@ -52,6 +53,7 @@ export default function Search() {
           </div>
           <div className="col-md-4">
             <button
+              key="btnSortDesc"
               className="btn btn-primary bi bi-sort-down"
               style={{ backgroundColor: "#5EB5D4" }}
               onClick={() => {
@@ -66,8 +68,8 @@ export default function Search() {
       <hr />
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {filteredProducts.map((element) => (
-          <div class="col">
-            <div class="card h-100 text-justify">
+          <div className="col" key={"crd1" + element.id}>
+            <div key={"crd2" + element.id} className="card h-100 text-justify">
               <img
                 key={"img" + element.id}
                 src={element.image}
@@ -75,9 +77,9 @@ export default function Search() {
                 alt="..."
                 style={{ height: "200px", width: "200px", marginLeft: "35%" }}
               />
-              <div key={"crd" + element.id} className="card-body">
+              <div key={"crd3" + element.id} className="card-body">
                 <h5
-                  key={"tit" + element.id}
+                  key={"tit1" + element.id}
                   className="card-title text-success text-center"
                 >
                   {element.price} INR

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default class PropsCard extends Component {
   render() {
-    let { id, imgSrc, title, desc, counter } = this.props;
+    let { id, imgSrc, title, desc, counter, inc, dec } = this.props;
     return (
       <>
         <div className="card" key={"cnt" + id}>
@@ -23,7 +23,7 @@ export default class PropsCard extends Component {
             <button
               key={"dec" + id}
               className="btn btn-success"
-              // onClick={() => this.decrement(id)}
+               onClick={() => dec(id)}
             >
               -
             </button>
@@ -37,7 +37,7 @@ export default class PropsCard extends Component {
             <button
               key={"inc" + id}
               className="btn btn-success"
-              // onClick={() => this.increment(id)}
+              onClick={() => inc(id)}
             >
               +
             </button>

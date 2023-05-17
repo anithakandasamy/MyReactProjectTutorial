@@ -26,7 +26,7 @@ export default class SignIn extends Component {
       >
         <div className="row">
           <div className="col-md-6">
-            <label for="inputEmail" className="form-label">
+            <label htmlFor="inputEmail" className="form-label">
               Email address
             </label>
             <input
@@ -39,7 +39,7 @@ export default class SignIn extends Component {
         </div>
         <div className="row">
           <div className="col-md-6">
-            <label for="inputPassword" className="form-label">
+            <label htmlFor="inputPassword" className="form-label">
               Password
             </label>
             <input
@@ -61,7 +61,7 @@ export default class SignIn extends Component {
             />
             <label
               className="form-check-label"
-              for="checkPassword"
+              htmlFor="checkPassword"
               style={{ paddingLeft: "5px" }}
             >
               Show Password

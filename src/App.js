@@ -16,15 +16,15 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Categories></Categories>
-      <Carousel></Carousel>
-      <Employee></Employee>
+      {/*  <Categories></Categories>
+     <Carousel></Carousel>
+      <Employee></Employee>*/}
       <hr/>
       <Search></Search>
       <Card1></Card1>
       <PropsCardParent></PropsCardParent>
       <StateCard></StateCard>
-      <CardModalFunction></CardModalFunction>
+      <CardModalFunction></CardModalFunction> 
       <CardBootstrapModal></CardBootstrapModal>
       <StateDemo></StateDemo>
       <Body></Body>
