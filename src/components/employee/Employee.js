@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import ReactPaginate from "react-paginate";
 import "./Employee.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 export default function Employee() {
   let [employees, setEmployee] = useState([
@@ -60,10 +60,6 @@ export default function Employee() {
 
   let GetId = (e) => {
     setId(e.target.value);
-  };
-
-  let GetName = (e) => {
-    setName(e.target.value);
   };
 
   let GetDepartment = (e) => {
@@ -273,7 +269,7 @@ export default function Employee() {
                   <input
                     type="text"
                     onChange={(e) => {
-                      GetName(e);
+                      setName(e.target.value)
                     }}
                     name="Name"
                     className="form-control"
