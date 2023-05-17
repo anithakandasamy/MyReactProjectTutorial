@@ -3,7 +3,7 @@ import SearchBar from "react-js-search";
 import Products from "./productsInfo.json";
 
 export default function Search() {
-  let [initialData, setInitialData] = useState(Products);
+  let [initialData] = useState(Products);
   let [filteredProducts, setFilteredProduct] = useState(Products);
 
   let SearchChange = (searchText, filteredData) => {
