@@ -5,7 +5,7 @@ export default function Carousel() {
   return (
     <div className="container-fluid">
       <div className="cold-md-4">
-        <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-bs-interval="true"  data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel slide"  data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button
               type="button"
@@ -29,7 +29,7 @@ export default function Carousel() {
             ></button>
           </div>
           <div className="carousel-inner  rounded">
-            <div className="carousel-item active">
+            <div className="carousel-item active" data-bs-interval="5000">
               <img
                 src="https://cdn.pixabay.com/photo/2020/04/08/02/57/switch-5015530_1280.jpg"
                 className="d-block w-100"
@@ -37,7 +37,7 @@ export default function Carousel() {
                 height={"300px"}
               />
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item" data-bs-interval="5000">
               <img
                 src="https://cdn.pixabay.com/photo/2020/04/08/02/57/switch-5015525_1280.jpg"
                 className="d-block w-100"
@@ -45,7 +45,7 @@ export default function Carousel() {
                 height={"300px"}
               />
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item" data-bs-interval="5000">
               <img
                 src="https://cdn.pixabay.com/photo/2022/12/21/06/53/electronic-connector-7669297_1280.jpg"
                 className="d-block w-100"
