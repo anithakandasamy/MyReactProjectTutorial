@@ -42,7 +42,7 @@ export default class EmployeesCrud extends Component {
     employee.Id = currentData.length + 101;
     currentData.push(employee);
     this.setState({employees: currentData});
-  };
+  }
 
   render() {
     return (

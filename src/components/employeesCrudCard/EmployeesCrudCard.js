@@ -1,6 +1,7 @@
 import React from "react";
+import { memo } from "react";
 
-export default function EmployeesCrudCard({ employees }) {
+function EmployeesCrudCard({ employees }) {
   return (
     <div className="row row-cols-1 row-cols-md-3 g-4">
       {employees.map((emp) => (
@@ -25,3 +26,5 @@ export default function EmployeesCrudCard({ employees }) {
     </div>
   );
 }
+
+export default memo(EmployeesCrudCard);

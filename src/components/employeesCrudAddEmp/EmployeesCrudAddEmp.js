@@ -1,7 +1,8 @@
 import React from "react";
+import { memo } from "react";
 import { useState } from "react";
 
-export default function EmployeesCrudAddEmp({addEmployee}) {
+function EmployeesCrudAddEmp({addEmployee}) {
   let SubmitHandler = (event) => {
     event.preventDefault();
     addEmployee(employee);
@@ -72,7 +73,7 @@ export default function EmployeesCrudAddEmp({addEmployee}) {
             setEmployee({ ...employee, Department: e.target.value });
           }}
         >
-          <option selected>Select Department</option>
+          <option>Select Department</option>
           <option value="Technology">Technology</option>
           <option value="RCC">RCC</option>
           <option value="BillPay">BillPay</option>
@@ -175,3 +176,5 @@ export default function EmployeesCrudAddEmp({addEmployee}) {
     </form>
   );
 }
+
+export default memo(EmployeesCrudAddEmp);
