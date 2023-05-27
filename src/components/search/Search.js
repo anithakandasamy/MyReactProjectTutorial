@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SearchBar from "react-js-search";
 import Products from "./productsInfo.json";
+import { Link } from "react-router-dom";
 
 export default function Search() {
   let [initialData] = useState(Products);
@@ -26,6 +27,10 @@ export default function Search() {
   return (
     <>
       <div className="container">
+        <h3 className="text-center">
+          Search & Sort - Child to Parent communication
+        </h3>
+        <hr />
         <div className="row">
           <div className="col-md-4">
             <SearchBar
@@ -84,12 +89,7 @@ export default function Search() {
                 >
                   {element.price} INR
                 </h5>
-                <h5
-                  key={"tit" + element.id}
-                  className="card-title text-primary text-center"
-                >
-                  {element.title}
-                </h5>
+                <Link to={`/Product/${element.id}`}>{element.title}</Link>
                 <p key={"desc" + element.id} className="card-text">
                   {element.description}
                 </p>

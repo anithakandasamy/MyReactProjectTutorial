@@ -38,6 +38,7 @@ export default function PropsCardParent() {
 
   return (
     <div className="container-fluid" style={{ paddingTop: "3px" }}>
+      <h3 className="text-center">Demo using Props - Child to Parent communication</h3>
       <div className="card-group">
         {products.map((ele) => (
           <PropsCard

@@ -30,6 +30,7 @@ export default class Comments extends Component {
           marginRight:"2px"
         }}
       >
+        <h3 className="text-center">Simple state demo</h3>
         <div className="row">
           <div className="col-md-12">
             <label htmlFor="inputComments" className="form-label">

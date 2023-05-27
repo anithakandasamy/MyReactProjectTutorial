@@ -24,6 +24,7 @@ export default class SignIn extends Component {
           marginLeft:"12px",
         }}
       >
+        <h3 className="text-center">Simple state implementation - Toggle masked input</h3>
         <div className="row">
           <div className="col-md-6">
             <label htmlFor="inputEmail" className="form-label">

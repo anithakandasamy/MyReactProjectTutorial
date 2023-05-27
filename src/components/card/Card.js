@@ -3,6 +3,7 @@ import React from "react";
 export default function Card() {
   return (
     <div className="container" style={{ paddingTop: "3px" }}>
+      <h2 className="text-center">This is simple Card</h2>
       <div className="card-group">
         <div className="card">
           <img src="https://cdn.pixabay.com/photo/2014/10/31/10/01/camera-510530_1280.jpg" className="card-img-top" alt="..." />
